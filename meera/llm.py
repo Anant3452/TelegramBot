@@ -11,7 +11,7 @@ from .config import env
 
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 # Tried in order; a 404 (model retired / not enabled for this key) falls through.
-GEMINI_FALLBACKS = ["gemini-3.8-flash", "gemini-3.5-flash", "gemini-flash-latest"]
+GEMINI_FALLBACKS = ["gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.5-flash", "gemini-2.5-flash", "gemini-flash-latest"]
 
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 
